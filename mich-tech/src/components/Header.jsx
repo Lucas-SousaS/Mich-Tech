@@ -9,12 +9,12 @@ function Header() {
   }
 
   return (
-    <div className="flex justify-around bg-[#ffe600] px-6 py-5 items-center">
+    <div className="flex justify-around bg-[#ffe600] px-6 py-5 items-center w-[100vw] ">
       <img src={logo} alt="logo mercado livre" />
 
       <div className="flex items-center bg-white py-2 px-2 gap-2">
         <input type="text" placeholder="Buscar produtos" className="w-[300px] border-none outline-none" />
-        <FaSearch className="text-slate-600" />
+        <FaSearch className="text-slate-600 hover:text-red-500 transition-all" />
       </div>
 
       <div className="flex px-6 items-center gap-4">
