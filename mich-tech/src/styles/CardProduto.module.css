@@ -1,0 +1,18 @@
+.button{
+    transition: all .3s;
+}
+
+.divButton{
+    transition: all .3s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.divButton:hover{
+    background-color: rgb(52, 131, 250);
+    box-shadow: 1px 1px 10px rgb(52, 131, 250);
+}
+
+.divButton:hover .button {
+    color: white;
+}   
