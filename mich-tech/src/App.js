@@ -1,10 +1,12 @@
 
-import './App.css';
-import Home from './pages/Home';
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <Home />
+    <div className="flex flex-col overflow-x-hidden bg-[#ebebeb] h-max min-h-screen">
+      <Home />
+    </div>
   );
 }
 
