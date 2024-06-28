@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CardProduto from "./CardProduto";
 import Loading from "./Loading";
+import PopUpProdutos from "./PopUpProdutos";
 
 function CarrosselProdutos({categoria}) {
 
@@ -10,11 +11,11 @@ function CarrosselProdutos({categoria}) {
 
     useEffect(()=>{
         fetch(url).then(data => data.json()).then(res => setProdutos(res.results))
-    },[])
+    },[url])
 
     return ( 
         <div className="w-[90vw]   p-4 gap-4 flex overflow-x-auto h-96 items-center">
-            {produtos ? produtos.map(item => <CardProduto item={item} /> ) : <Loading />}
+            {produtos ? produtos.map(item => <CardProduto key={item.id} item={item} /> ) : <Loading />}
         </div>
      );
 }
