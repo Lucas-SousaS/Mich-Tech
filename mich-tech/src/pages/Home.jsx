@@ -1,7 +1,7 @@
 
 import CarrosselProdutos from "../components/CarrosselProdutos";
 import { BiSolidCart } from "react-icons/bi";
-import PopUpProdutos from "../components/PopUpProdutos";
+
 
 function Home() {
   return (

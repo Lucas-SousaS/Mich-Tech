@@ -32,7 +32,7 @@ function PopUpProdutos({ id }) {
               <div className="flex flex-col h-[300px] overflow-y-auto gap-4">
                 {produto.pictures &&
                   produto.pictures.map((item) => (
-                    <div className="flex items-center justify-center p-1 border-2 border-[#b8b8b87b] rounded-md h-24 w-24">
+                    <div key={item.id} className="flex items-center justify-center p-1 border-2 border-[#b8b8b87b] rounded-md h-24 w-24">
                       {" "}
                       <img
                         src={item.url}
