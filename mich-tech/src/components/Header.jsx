@@ -2,9 +2,9 @@ import { FaBars } from "react-icons/fa6";
 import logo from "../logo.png";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
+import ResultBusca from "./ResultBusca";
 
-function Header({ abrirMenu, fecharMenu }) {
-  const [contPesquisa, setPesquisa] = useState(false);
+function Header({ abrirMenu }) {
 
   const [inputValue, setInputValue] = useState('');
 
@@ -12,8 +12,9 @@ function Header({ abrirMenu, fecharMenu }) {
     setInputValue(event.target.value);
   };
 
+  
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full items-center">
     <div className="flex justify-around bg-[#ffe600] px-6 py-5 items-center w-[100vw] ">
       <img src={logo} alt="logo mercado livre" />
 
@@ -43,9 +44,7 @@ function Header({ abrirMenu, fecharMenu }) {
       </button>
     </div>
 
-    {inputValue.trim() !== '' && (
-        <div className="z-10 flex flex-col  bg-gray-600 h-80">ola</div>
-      )}
+    {inputValue.trim() !== '' && <ResultBusca produtoNames={inputValue}/>}
       </div>
   );
 }

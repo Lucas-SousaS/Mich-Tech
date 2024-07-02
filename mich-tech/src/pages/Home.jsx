@@ -9,7 +9,7 @@ function Home() {
       
       <CarrosselProdutos categoria={"iphone"} />
       <CarrosselProdutos categoria={"notebook"}/>
-      <CarrosselProdutos categoria={"mouse"} />
+      <CarrosselProdutos categoria={"perifericos para computador"} />
       
 
       <button className="fixed right-0 bottom-0 translate-x-[-50%] translate-y-[-50%] bg-[#00A650] h-14 w-14 rounded-full flex items-center justify-center">
