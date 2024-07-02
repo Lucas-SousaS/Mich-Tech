@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { CgClose } from "react-icons/cg";
 import estilo from "../styles/PopUpProdutos.module.css";
 import formatador from "../tools/formatador";
-import porcento from "../tools/porcento";
 
 function PopUpProdutos({ id }) {
   const url = `https://api.mercadolibre.com/items/${id}`;

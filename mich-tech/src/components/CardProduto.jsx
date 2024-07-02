@@ -11,7 +11,6 @@ function CardProduto({item}) {
 
     const popUpVisivel = () => {
         setPopUpProdutos(!popUpProdutos)
-        console.log(item.id)
     } 
 
     return ( 
