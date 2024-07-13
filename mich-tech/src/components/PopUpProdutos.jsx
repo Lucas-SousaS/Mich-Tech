@@ -26,7 +26,7 @@ function PopUpProdutos({ id }) {
 
   return (
     <div
-      className={`${estilo.container} z-10 justify-around items-center  w-[90%] h-[80%] bg-[#d2d2d2] rounded-lg fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex ${visivel}`}
+      className={`${estilo.container} z-10 justify-around items-center  w-[90%] h-[95%] bg-[#d2d2d2] rounded-lg fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex ${visivel}`}
     >
       <div className="bg-white flex w-[100%] h-[100%] items-center justify-center gap-8 rounded-xl">
         {produto ? (
